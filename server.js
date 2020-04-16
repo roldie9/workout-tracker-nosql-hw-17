@@ -5,7 +5,6 @@ const path = require("path");
 
 const PORT = process.env.PORT || 3000;
 
-//const User = require(".userModel.js");
 const app = express();
 require("./routes/api-routes")(app);
 require("./routes/html-routes")(app);
