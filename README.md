@@ -7,10 +7,12 @@
 ## Programs used
 
 * Mongo
+* MongoDB
 * Express
 * Node 
 * HTML
 * JavaScript
+* Bootstrap
 
 ## Questions
 
