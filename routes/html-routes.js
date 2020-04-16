@@ -1,5 +1,4 @@
 const express = require("express");
-// const router = express.Router()
 let path = require("path");
 
 module.exports = function(app) {
@@ -13,6 +12,6 @@ module.exports = function(app) {
     });
 
     app.get("/stats", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/stats.html"))
+        res.sendFile(path.join(__dirname, "../public/stats.html"));
     });
 };
