@@ -3,6 +3,7 @@ const router = require("express").Router();
 //const db = require("../models");
 const Workout = require("../models/workoutModel");
 
+
 router.post("/api/workouts", (req, res) => {
     Workout.create({})
       .then(dbWorkout => {
@@ -14,13 +15,13 @@ router.post("/api/workouts", (req, res) => {
   });
 
 router.put("api/workouts/:id", (req, res) => {
-    db.Workout.create(req.body);
+    Workout.create(req.body);
     console.log(req.body)
     res.json();
 });
 
 router.get("/api/workouts", (req, res) => {
-    db.Workout.find({}, (err, data) => {
+    Workout.find({}, (err, data) => {
         if (err) { 
             res.send(err)
         } else {
@@ -49,6 +50,7 @@ router.delete("/api/workouts", ({ body }, res) => {
         res.json(err);
       });
   });
+
 
 module.exports = router;
 
